@@ -1,0 +1,10 @@
+C:\Users\khoinguyen\source\repos\WebApplicationProfile\WebApplicationProfile\bin\WebApplicationProfile.dll.config
+C:\Users\khoinguyen\source\repos\WebApplicationProfile\WebApplicationProfile\bin\WebApplicationProfile.dll
+C:\Users\khoinguyen\source\repos\WebApplicationProfile\WebApplicationProfile\bin\WebApplicationProfile.pdb
+C:\Users\khoinguyen\source\repos\WebApplicationProfile\WebApplicationProfile\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\khoinguyen\source\repos\WebApplicationProfile\WebApplicationProfile\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\khoinguyen\source\repos\WebApplicationProfile\WebApplicationProfile\obj\Debug\WebApplicationProfile.csproj.CoreCompileInputs.cache
+C:\Users\khoinguyen\source\repos\WebApplicationProfile\WebApplicationProfile\obj\Debug\WebApplicationProfile.dll
+C:\Users\khoinguyen\source\repos\WebApplicationProfile\WebApplicationProfile\obj\Debug\WebApplicationProfile.pdb
+C:\Users\khoinguyen\source\repos\WebApplicationProfile\WebApplicationProfile\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\khoinguyen\source\repos\WebApplicationProfile\WebApplicationProfile\obj\Debug\WebApplicationProfile.csprojResolveAssemblyReference.cache
