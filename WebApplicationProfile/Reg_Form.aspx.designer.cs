@@ -46,7 +46,7 @@ namespace WebApplicationProfile {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox FirstName_TextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText FirstName_TextBox;
         
         /// <summary>
         /// LastName_TextBox control.
@@ -55,7 +55,7 @@ namespace WebApplicationProfile {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox LastName_TextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText LastName_TextBox;
         
         /// <summary>
         /// Gender_DropDownList1 control.
@@ -73,7 +73,7 @@ namespace WebApplicationProfile {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Phone_TextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText Phone_TextBox;
         
         /// <summary>
         /// Username_TextBox control.
@@ -82,7 +82,7 @@ namespace WebApplicationProfile {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Username_TextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText Username_TextBox;
         
         /// <summary>
         /// Password_TextBox control.
@@ -91,7 +91,7 @@ namespace WebApplicationProfile {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Password_TextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword Password_TextBox;
         
         /// <summary>
         /// ConfirmPW_TextBox control.
@@ -100,7 +100,7 @@ namespace WebApplicationProfile {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ConfirmPW_TextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword ConfirmPW_TextBox;
         
         /// <summary>
         /// Next_Button control.
