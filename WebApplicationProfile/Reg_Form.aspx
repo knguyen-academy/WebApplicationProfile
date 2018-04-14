@@ -20,25 +20,27 @@
 
             <%------------------UserInfo_View-------------------%>
             <asp:View ID="UserInfo_View" runat="server">
-                <input id="FirstName_TextBox" runat="server" type="text" placeholder="First name" />
+                <input id="FirstName_TextBox" runat="server" type="text" placeholder="First name" required/>
                 <br />
-                <input id="LastName_TextBox" runat="server" type="text" placeholder="Last name" />
+                <input id="LastName_TextBox" runat="server" type="text" placeholder="Last name" required/>
                 <br />
-                <asp:DropDownList ID="Gender_DropDownList1" runat="server">
-
-                    <asp:ListItem Value="-1">Gender</asp:ListItem>
-                    <asp:ListItem Value="M">Male</asp:ListItem>
-                    <asp:ListItem Value="F">Female</asp:ListItem>
-
-                </asp:DropDownList>
+                <select id="Gender_DropDownList1" runat="server" required>
+                      <option value="">Gender</option>
+                      <option value="M">Male</option>
+                      <option value="F">Female</option>
+               
+                </select>
+    
                 <br />
-                <input id="Phone_TextBox" runat="server" type="text" placeholder="Phone" />
+                <input id="Phone_TextBox" runat="server" type="text" placeholder="Phone" required >
                 <br />
-                <input id="Username_TextBox" runat="server" type="text" placeholder="User name" />
+                <input id="Username_TextBox" runat="server" type="text" placeholder="User name" required/>
                 <br />
-                <input id="Password_TextBox" runat="server" type="password" placeholder="Password" />
+                <input id="Email_TextBox" runat="server" type="text" placeholder="Email" required/>
+                <br/>
+                <input id="Password_TextBox" runat="server" type="password" placeholder="Password" required/>
                 <br />
-                <input id="ConfirmPW_TextBox" runat="server" type="password" placeholder="Confirm Password" />
+                <input id="ConfirmPW_TextBox" runat="server" type="password" placeholder="Confirm Password" required/>
                 <br />
 
                 <asp:Button ID="Next_Button" runat="server" Text="  Next  " OnClick="Next_Button_Click" />
@@ -85,7 +87,14 @@
                             <asp:Label ID="Username_Label" runat="server" Text=""></asp:Label>
                         </td>
                     </tr>
-
+                       <tr>
+                        <td>
+                            <asp:Label ID="Label4" runat="server" Text="Email:"></asp:Label>
+                        </td>
+                        <td>
+                            <asp:Label ID="Email_Label" runat="server" Text=""></asp:Label>
+                        </td>
+                    </tr>
                 </table>
                 <br />
                 <asp:Button ID="Previous_Button" runat="server" Text="Previous" OnClick="Previous_Button_Click" />

@@ -64,7 +64,7 @@ namespace WebApplicationProfile {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList Gender_DropDownList1;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect Gender_DropDownList1;
         
         /// <summary>
         /// Phone_TextBox control.
@@ -83,6 +83,15 @@ namespace WebApplicationProfile {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText Username_TextBox;
+        
+        /// <summary>
+        /// Email_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText Email_TextBox;
         
         /// <summary>
         /// Password_TextBox control.
@@ -200,6 +209,24 @@ namespace WebApplicationProfile {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Username_Label;
+        
+        /// <summary>
+        /// Label4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label4;
+        
+        /// <summary>
+        /// Email_Label control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Email_Label;
         
         /// <summary>
         /// Previous_Button control.
