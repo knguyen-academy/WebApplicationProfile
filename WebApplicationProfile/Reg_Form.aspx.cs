@@ -24,13 +24,15 @@ namespace WebApplicationProfile
         protected void Next_Button_Click(object sender, EventArgs e)
         {
             //Show Summary page
-            Reg_MultiView.ActiveViewIndex = 1;
-            Name_Label.Text = FirstName_TextBox.Value + " " + LastName_TextBox.Value;
-            Gender_Label.Text = Gender_DropDownList1.Value;
-            Phone_Label.Text = Phone_TextBox.Value;
-            Username_Label.Text = Username_TextBox.Value;
-            Email_Label.Text = Email_TextBox.Value;
-
+            if (Page.IsValid)
+            {
+                Reg_MultiView.ActiveViewIndex = 1;
+                Name_Label.Text = FirstName_TextBox.Value + " " + LastName_TextBox.Value;
+                Gender_Label.Text = Gender_DropDownList1.Value;
+                Phone_Label.Text = Phone_TextBox.Value;
+                Username_Label.Text = Username_TextBox.Value;
+                Email_Label.Text = Email_TextBox.Value;
+            }
 
         }
 
