@@ -20,10 +20,9 @@
 
             <%------------------UserInfo_View-------------------%>
             <asp:View ID="UserInfo_View" runat="server">
-                <form id="Form1" >
-                <input id="FirstName_TextBox" runat="server" type="text" placeholder="First name" maxlength = "20" required/>
+                <input id="FirstName_TextBox" runat="server" type="text" placeholder="First name" required/>
                 <br />
-                <input id="LastName_TextBox" runat="server" type="text" placeholder="Last name" maxlength = "20" required/>
+                <input id="LastName_TextBox" runat="server" type="text" placeholder="Last name" required/>
                 <br />
                 <select id="Gender_DropDownList1" runat="server" required>
                       <option value="">Gender</option>
@@ -31,29 +30,21 @@
                       <option value="F">Female</option>
                
                 </select>
-          
+    
                 <br />
-                <input id="Phone_TextBox" runat="server" type="text" placeholder="Phone" />
+                <input id="Phone_TextBox" runat="server" type="text" placeholder="Phone" required >
                 <br />
-                <input id="Username_TextBox" runat="server" type="text" placeholder="User name" maxlength = "20" required/>
+                <input id="Username_TextBox" runat="server" type="text" placeholder="User name" required/>
                 <br />
-                <input id="Email_TextBox" runat="server" type="text" placeholder="Email" maxlength = "20" required/>
+                <input id="Email_TextBox" runat="server" type="text" placeholder="Email" required/>
                 <br/>
-                <input id="Password_TextBox" runat="server" type="password" placeholder="Password" 
-                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
-                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required/>
+                <input id="Password_TextBox" runat="server" type="password" placeholder="Password" required/>
                 <br />
                 <input id="ConfirmPW_TextBox" runat="server" type="password" placeholder="Confirm Password" required/>
-                    <asp:CompareValidator ID="CompareValidatorPW" runat="server"
-                        ErrorMessage="Password not match" Forecolor="Red"
-                        ControlToValidate="ConfirmPW_TextBox" ControlToCompare="Password_TextBox" 
-                        Operator="Equal" Type="String"> </asp:CompareValidator>
-                <label id="responseMess" style="color:red; font-weight:bold"></label>
                 <br />
-                
+
                 <asp:Button ID="Next_Button" runat="server" Text="  Next  " OnClick="Next_Button_Click" />
-                <asp:Button ID="Cancel_Button" runat="server" Text="Cancel" OnClick="Cancel_Button_Click" formnovalidate />
-                </form>
+                <asp:Button ID="Cancel_Button" runat="server" Text="Cancel" OnClick="Cancel_Button_Click" />
             </asp:View>
 
 
@@ -106,42 +97,22 @@
                     </tr>
                 </table>
                 <br />
-                <asp:Button ID="Previous_Button" runat="server" Text="Previous" OnClick="Previous_Button_Click " />
-                <asp:Button ID="Signup_Button" runat="server" Text="Sign Up" OnClick="Signup_Button_Click"  type="submit" />
+                <asp:Button ID="Previous_Button" runat="server" Text="Previous" OnClick="Previous_Button_Click" />
+                <asp:Button ID="Signup_Button" runat="server" Text="Sign Up" OnClick="Signup_Button_Click" />
             </asp:View>
         </asp:MultiView>
 
 
     </form>
 
-    <%------------------SCRIPTS-------------------%>
+
+    <%------------------JS script for phone mask-------------------%>
     <script>
-        <%------------------JS script for phone mask-------------------%>
-    
         $(document).ready(function () {
 
             $("#Phone_TextBox").keypress(function () {
                 $(this).inputmask("(999) 999-9999");
             });
-
-        <%------------------JS script for Confirmpass-------------------%>
-            //$("#ConfirmPW_TextBox").blur(function () {
-            //    var pw = $("#ConfirmPW_TextBox").val();
-            //    var confirmPW = $("#Password_TextBox").val();
-            //    //var messID = $("#responseMess");
-            //    if (pw != confirmPW) {
-            //        //messID.title = "test";
-            //        //title = "Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-            //        //alert("Not equal");
-            //        $("#responseMess").html("Password is not matched");
-            //        //document.getElementById('Next_Button').disabled = true;
-            //        //$("#Next_Button").prop('disabled', true);​
-            //       // $("#ConfirmPW_TextBox").attr('title', 'your value');
-
-            //    }
-            //});
-
-
         });
 
     </script>
