@@ -35,8 +35,8 @@ namespace WebApplicationProfile
                     //Init Defined Store Procedure (see SQLMS ) with output return value
                     SqlCommand cmd = new SqlCommand("GetCredentials", con);
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@Username", Username_TextBox.Text);
-                    cmd.Parameters.AddWithValue("@Password", Password_TextBox.Text);
+                    cmd.Parameters.AddWithValue("@Username", Username_TextBox.Value);
+                    cmd.Parameters.AddWithValue("@Password", Password_TextBox.Value);
 
                     // Init output
                     SqlParameter result = new SqlParameter();
@@ -55,13 +55,17 @@ namespace WebApplicationProfile
                     //If found credentials, meaning count =1
                     if (count == 1)
                     {
-                        Login_Label.Text = "User and password is corrected";
-                        Login_Label.ForeColor = System.Drawing.Color.Green;
+                        //Response.Write("Sucess");
+                        Server.Transfer("Reg_Form.aspx");
+                        //Login_Label.Text = "User and password is corrected";
+                        //Login_Label.ForeColor = System.Drawing.Color.Green;
                     }
                     else
                     {
-                        Login_Label.Text = "You have entered an invalid username or password";
-                        Login_Label.ForeColor = System.Drawing.Color.Red;
+                        //Response.Write("Nope");
+                        errorMessage.InnerHtml = "Either username or password is incorrect";
+                        //Login_Label.Text = "You have entered an invalid username or password";
+                        //Login_Label.ForeColor = System.Drawing.Color.Red;
                     }
                        
                 }

@@ -44,7 +44,7 @@
                 <br />
 
                 <asp:Button ID="Next_Button" runat="server" Text="  Next  " OnClick="Next_Button_Click" />
-                <asp:Button ID="Cancel_Button" runat="server" Text="Cancel" OnClick="Cancel_Button_Click" />
+                <asp:Button ID="Cancel_Button" runat="server" Text="Cancel" OnClick="Cancel_Button_Click" formnovalidate="true" />
             </asp:View>
 
 
