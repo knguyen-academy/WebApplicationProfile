@@ -70,7 +70,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\Background\login_bg.jpg" />
+    <Content Include="Scripts\RegFormJS.js" />
+    <Content Include="Styles\login-Style.css" />
+    <Content Include="Styles\RegFormStyle.css" />
     <Content Include="WebForm2.aspx" />
+    <Content Include="RegForm.aspx" />
     <None Include="packages.config" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -117,6 +121,16 @@
     <Compile Include="WebForm2.aspx.designer.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
+    <Compile Include="RegForm.aspx.cs">
+      <DependentUpon>RegForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegForm.aspx.designer.cs">
+      <DependentUpon>RegForm.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
