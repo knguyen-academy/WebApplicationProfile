@@ -31,12 +31,12 @@
 
 
     <!-- SIGN UP FORM -->
-    <!-- Modal -->
+   <!-- Modal tab1 -->
     <div id="id01" class="modal">
         <!-- Form -->
-        <form class="formSignup">
+        <form id="signupStep" class="formSignup tab1">
             <!-- Form container -->
-            <div class="singupContainer">
+            <div id = 'id02'class="singupContainer">
 
                 <h2>Sign Up</h2>
                 <p>Please fill in this form to create an account</p>
@@ -56,12 +56,32 @@
                 <p>By creating an account you agree to our
                     <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
                 <div>
-                    <input id="Next_Button" onclick="test()" type="button" value="Next" runat="server" />
+                    <input id="Next_Button" onclick="nextForm()" type="button" value="Next" runat="server" />
                     <input id="Cancel_Button" onclick="bringDown()" type="button" value="Cancel" runat="server" />
                 </div>
-            </div>            <!-- container -->
+            </div>
+            <!-- container -->
         </form>
-    </div>    <!-- modal -->
+
+        <div id="confirmStep" class="formSignup tab2">
+            <h2>Confirm</h2>
+            <p>Please fill in this form to create an account</p>
+            <div class="singupContainer">
+                <p>First name: </p>
+                <p>Last name: </p>
+                <p>Phone: </p>
+                <p>Gender: </p>
+                <p>Username: </p>
+                <p>Email: </p>
+                <div>
+                    <input id="Prev_Button" onclick="prevForm()" type="button" value="Previous" runat="server" />
+                    <input id="Confirm_Button" onclick="confirmForm()" type="button" value="Confirm" runat="server" />
+                </div>
+            </div>
+        </div>
+        <!-- modal -->
+
+
 
     <!-- Javascripts -->
     <script src="../Scripts/RegFormJS.js"></script>

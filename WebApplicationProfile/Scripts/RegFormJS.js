@@ -27,4 +27,24 @@ loginF.style.display= "block";
 }
 
 
+var signupStep = document.getElementById('signupStep');
+var confirmStep = document.getElementById('confirmStep');
+
+
+function nextForm() {
+
+    signupStep.style.display = "none";
+    confirmStep.style.display = "block";
+  
+}
+
+function prevForm() {
+    signupStep.style.display = "block";
+    confirmStep.style.display = "none";
+}
+
+function confirmForm() {
+    alert("confirm");
+}
+
 
