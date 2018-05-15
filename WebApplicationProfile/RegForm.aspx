@@ -13,7 +13,7 @@
     <div id='id00' class="loginContainer">
         <h1> Welcome </h1>
         <img class="avatar" src="http://spotterboard.com/uploads/avatars/default.jpg" />
-        <form class="loginForm" runat="server">
+        <form class="loginForm">
             <p class="title"> Username </p>
             <input type="text" id="Username_TextBox" placeholder ="Enter your username" runat="server" required/>
 			<p class ="title"> Password </p>
@@ -41,8 +41,8 @@
                 <h2>Sign Up</h2>
                 <p>Please fill in this form to create an account</p>
                 <hr>
-                <input id="FirstName_TextBox" type="text" placeholder="First Name" required/>
-                <input id="LastName_TextBox" type="text" placeholder="Last Name" required/>
+                <input id="FirstName_TextBox" type="text" placeholder="First Name"  runat="server" required/>
+                <input id="LastName_TextBox" type="text" placeholder="Last Name"  runat="server" required/>
                 <select id="Gender_DropDownList1" runat="server" required>
                     <option value="-1">Gender</option>
                     <option value="Male">Male</option>
@@ -56,7 +56,7 @@
                 <p>By creating an account you agree to our
                     <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
                 <div>
-                    <input id="Next_Button" onclick="nextForm()" type="button" value="Next" runat="server" />
+                    <input id="Next_Button" onclick="nextForm()" type="submit" value="Next" runat="server" />
                     <input id="Cancel_Button" onclick="bringDown()" type="button" value="Cancel" runat="server" />
                 </div>
             </div>
