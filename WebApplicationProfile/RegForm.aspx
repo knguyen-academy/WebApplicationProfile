@@ -41,18 +41,18 @@
                 <h2>Sign Up</h2>
                 <p>Please fill in this form to create an account</p>
                 <hr>
-                <input id="FirstName_TextBox" type="text" placeholder="First Name" />
-                <input id="LastName_TextBox" type="text" placeholder="Last Name" />
-                <select id="Gender_DropDownList1" runat="server">
+                <input id="FirstName_TextBox" type="text" placeholder="First Name" required/>
+                <input id="LastName_TextBox" type="text" placeholder="Last Name" required/>
+                <select id="Gender_DropDownList1" runat="server" required>
                     <option value="-1">Gender</option>
-                    <option value="1">Male</option>
-                    <option value="2">Female</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
                 </select>
-                <input id="Phone_TextBox" runat="server" type="text" placeholder="Phone" />
-                <input id="Text1" runat="server" type="text" placeholder="Username" />
-                <input id="Email_TextBox" runat="server" type="text" placeholder="Email" />
-                <input id="Password1" runat="server" type="password" placeholder="Password" />
-                <input id="ConfirmPW_TextBox" runat="server" type="password" placeholder="Confirm Password" />
+                <input id="Phone_TextBox" runat="server" type="text" placeholder="Phone" required/>
+                <input id="Username1" runat="server" type="text" placeholder="Username" required/>
+                <input id="Email_TextBox" runat="server" type="text" placeholder="Email" required/>
+                <input id="Password1" runat="server" type="password" placeholder="Password" required/>
+                <input id="ConfirmPW_TextBox" runat="server" type="password" placeholder="Confirm Password" required />
                 <p>By creating an account you agree to our
                     <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
                 <div>
@@ -67,12 +67,13 @@
             <h2>Confirm</h2>
             <p>Please fill in this form to create an account</p>
             <div class="singupContainer">
-                <p><span>First name: </span> <span id="fn" runat="server"></span></p>
-                <p>Last name: </p>
-                <p>Phone: </p>
-                <p>Gender: </p>
-                <p>Username: </p>
-                <p>Email: </p>
+                <p><span style="font-weight:bold;">First name: </span> <span id="fn" runat="server"></span></p>
+                <p><span style="font-weight:bold;">Last name: </span> <span id="ln" runat="server"></span></p>
+                <p><span style="font-weight:bold;">Phone: </span> <span id="phone" runat="server"></span></p>
+                <p><span style="font-weight:bold;">Gender: </span> <span id="gender" runat="server"></span></p>
+                <p><span style="font-weight:bold;">User name: </span> <span id="username" runat="server"></span></p>
+                <p><span style="font-weight:bold;">Email: </span> <span id="email" runat="server"></span></p>
+
                 <div>
                     <input id="Prev_Button" onclick="prevForm()" type="button" value="Previous" runat="server" />
                     <input id="Confirm_Button" onclick="confirmForm()" type="button" value="Confirm" runat="server" />
