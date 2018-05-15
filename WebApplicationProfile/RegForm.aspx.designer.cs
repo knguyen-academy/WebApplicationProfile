@@ -121,6 +121,15 @@ namespace WebApplicationProfile {
         protected global::System.Web.UI.HtmlControls.HtmlInputButton Cancel_Button;
         
         /// <summary>
+        /// fn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl fn;
+        
+        /// <summary>
         /// Prev_Button control.
         /// </summary>
         /// <remarks>

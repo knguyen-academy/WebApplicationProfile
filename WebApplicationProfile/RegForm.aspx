@@ -67,7 +67,7 @@
             <h2>Confirm</h2>
             <p>Please fill in this form to create an account</p>
             <div class="singupContainer">
-                <p>First name: </p>
+                <p><span>First name: </span> <span id="fn" runat="server"></span></p>
                 <p>Last name: </p>
                 <p>Phone: </p>
                 <p>Gender: </p>
