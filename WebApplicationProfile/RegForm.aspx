@@ -13,7 +13,7 @@
     <div id='id00' class="loginContainer">
         <h1> Welcome </h1>
         <img class="avatar" src="http://spotterboard.com/uploads/avatars/default.jpg" />
-        <form class="loginForm">
+        <form class="loginForm" runat="server">
             <p class="title"> Username </p>
             <input type="text" id="Username_TextBox" placeholder ="Enter your username" runat="server" required/>
 			<p class ="title"> Password </p>
@@ -34,7 +34,7 @@
    <!-- Modal tab1 -->
     <div id="id01" class="modal">
         <!-- Form -->
-        <form id="signupStep" class="formSignup tab1">
+        <form id="signupStep" class="formSignup tab1" >
             <!-- Form container -->
             <div id = 'id02'class="singupContainer">
 

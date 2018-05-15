@@ -7,4 +7,3 @@ C:\Users\khoinguyen\source\repos\WebApplicationProfile\WebApplicationProfile\obj
 C:\Users\khoinguyen\source\repos\WebApplicationProfile\WebApplicationProfile\obj\Debug\WebApplicationProfile.dll
 C:\Users\khoinguyen\source\repos\WebApplicationProfile\WebApplicationProfile\obj\Debug\WebApplicationProfile.pdb
 C:\Users\khoinguyen\source\repos\WebApplicationProfile\WebApplicationProfile\bin\AspNet.ScriptManager.jQuery.dll
-C:\Users\khoinguyen\source\repos\WebApplicationProfile\WebApplicationProfile\obj\Debug\WebApplicationProfile.csprojResolveAssemblyReference.cache

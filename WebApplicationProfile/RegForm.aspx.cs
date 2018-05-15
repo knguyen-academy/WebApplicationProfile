@@ -41,6 +41,7 @@ namespace WebApplicationProfile
 
                     // Init output
                     SqlParameter result = new SqlParameter();
+                    //assign local variable result to value of result in SP
                     result.ParameterName = "@result";
                     result.SqlDbType = SqlDbType.Int;
                     result.Direction = ParameterDirection.Output;
@@ -57,7 +58,7 @@ namespace WebApplicationProfile
                     if (count == 1)
                     {
                         Response.Write("Sucess");
-                        //Server.Transfer("Reg_Form.aspx");
+                        Server.Transfer("index.html");
                         //Login_Label.Text = "User and password is corrected";
                         //Login_Label.ForeColor = System.Drawing.Color.Green;
                     }

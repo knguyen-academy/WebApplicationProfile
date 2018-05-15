@@ -69,8 +69,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin.aspx" />
     <Content Include="Images\Background\login_bg.jpg" />
+    <Content Include="index.html" />
     <Content Include="Scripts\RegFormJS.js" />
+    <Content Include="Styles\Admin.css" />
     <Content Include="Styles\login-Style.css" />
     <Content Include="Styles\RegFormStyle.css" />
     <Content Include="WebForm2.aspx" />
@@ -99,6 +102,13 @@
     <Content Include="Login_Form.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Login_Form.aspx.cs">
       <DependentUpon>Login_Form.aspx</DependentUpon>

@@ -9,10 +9,6 @@ window.onclick = function (event) {
     }
 }
 
-function test() {
-    alert("Hello");
-}
-
 //When click button, bring up Modal
 function bringUp() {
     //var modal = document.getElementById('id01');
