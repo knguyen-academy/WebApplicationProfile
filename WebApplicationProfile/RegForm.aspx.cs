@@ -58,7 +58,7 @@ namespace WebApplicationProfile
                     if (count == 1)
                     {
                         Response.Write("Sucess");
-                        Server.Transfer("index.html");
+                        Server.Transfer("Admin.aspx");
                         //Login_Label.Text = "User and password is corrected";
                         //Login_Label.ForeColor = System.Drawing.Color.Green;
                     }
